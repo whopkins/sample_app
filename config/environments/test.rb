@@ -35,5 +35,8 @@ Rails.application.configure do
   config.active_support.deprecation = :stderr
 
   # Raises error for missing translations
-  # config.action_view.raise_on_missing_translations = true
+  # config.action_view.raise_on_missing_translations = true`
+
+  # https://github.com/rspec/rspec-rails/issues/936#issuecomment-42036216
+  config.active_record.maintain_test_schema = false
 end
