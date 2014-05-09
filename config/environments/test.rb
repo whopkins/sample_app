@@ -39,4 +39,8 @@ Rails.application.configure do
 
   # https://github.com/rspec/rspec-rails/issues/936#issuecomment-42036216
   config.active_record.maintain_test_schema = false
+  
+  # Speed up tests by lowering bcrypt's cost function.
+  ActiveModel::SecurePassword.min_cost = true
+  
 end
